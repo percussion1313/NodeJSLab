@@ -27,15 +27,16 @@ let chirps = [
     }
 ]
 
-// require('fs').writeFile(dataPath,
+require('fs').writeFile(dataPath,
 
-//     JSON.stringify(chirps),
+    JSON.stringify(chirps),
 
-//     function (err) {
-//         if (err) {
-//             console.error('what went wrong');
-//         }
-//     }
-// );
+    function (err) {
+        if (err) {
+            console.error('what went wrong');
+        }
+    }
+);
 
 console.log(JSON.stringify(chirps))
+
